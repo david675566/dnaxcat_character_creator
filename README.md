@@ -1,6 +1,7 @@
-# dnaxcat_character_creator
+# DNAXCAT Character Creator
 
-A new Flutter project.
+A little Character Creator program towards DNAXCAT fanbase.
+This Project is NOT monetize in any ways, ofc.
 
 ## Getting Started
 
