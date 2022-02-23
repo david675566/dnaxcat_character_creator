@@ -1,3 +1,12 @@
 import 'package:get/get.dart';
 
-class CreatorController extends GetxController {}
+import '../../home/controller/home_controller.dart';
+
+class CreatorController extends GetxController {
+  final _homeController = Get.find<HomeController>();
+
+  @override
+  void onInit() {
+    super.onInit();
+  }
+}

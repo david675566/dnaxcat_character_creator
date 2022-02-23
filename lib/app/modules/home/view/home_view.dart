@@ -99,9 +99,9 @@ class HomeView extends GetView<HomeController> {
       itemBuilder: (context, index) {
         // Image Button
         return TextButton(
-          child: Image.asset(controller.basePath + data[index].path),
+          child: (data[index].path == null) ? Container() : Image.asset(controller.basePath + data[index].path),
           onPressed: () {
-            controller.logger.i('Selected ${data[index].name}');
+            controller.logger.i('Selected ${data[index].path}');
           },
         );
       },
