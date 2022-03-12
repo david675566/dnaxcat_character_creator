@@ -1,19 +1,26 @@
-enum SymmetricPosition {
-  center,
-  left,
-  right,
+enum BodyParts {
+  background,
+  face, // basically is 'cheek'
+  blush,
+  eyes,
+  mouth,
+  body,
+  leftHand,
+  rightHand,
+  leftEar,
+  rightEar,
 }
 
 class PartModel {
   //final String? name;
-  final String? type;
+  final String? typeName;
   final String? path;
-  final SymmetricPosition? symmetricPosition;
+  final BodyParts? bodyParts;
 
   PartModel({
     //required this.name,
-    required this.type,
+    required this.typeName,
     required this.path,
-    required this.symmetricPosition,
+    required this.bodyParts,
   });
 }
